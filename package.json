@@ -1,0 +1,27 @@
+{
+  "name": "typescript-mysql",
+  "version": "1.0.0",
+  "description": "Curso NodeJS - TypeScript y MySQL",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc && npm run html",
+    "html": "copyfiles --up 1 src/public/*.html dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodejs",
+    "typescript",
+    "mysql"
+  ],
+  "author": "José Manuel Garrido Chacón",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql": "github:mysqljs/mysql"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.7",
+    "@types/mysql": "^2.15.14",
+    "copyfiles": "^2.3.0"
+  }
+}
